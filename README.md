@@ -11,4 +11,4 @@ otherwise draws the graph in a circle.
 3. [Class ClLine](https://github.com/AlexBowsunowski/Task1WithOOP/blob/main/Sources/src/ClLine.cpp) implements an abstract class ClDraw, draws a line.
 4. [Class Edge](https://github.com/AlexBowsunowski/Task1WithOOP/blob/main/Sources/src/Edge.cpp) implements an abstract class ClLine, draws a edge.
 5. [Class Vertex](https://github.com/AlexBowsunowski/Task1WithOOP/blob/main/Sources/src/Vertex.cpp) implements an abstract class ClCircle, draws a vertex.
-6. [Class Graph](https://github.com/AlexBowsunowski/Task1WithOOP/blob/main/Sources/src/Graph.cpp) implements an abstract class Graph, draws a graph considering whether this graph is bipartite.
+6. [Class Graph](https://github.com/AlexBowsunowski/Task1WithOOP/blob/main/Sources/src/Graph.cpp) draws a graph considering whether this graph is bipartite.
