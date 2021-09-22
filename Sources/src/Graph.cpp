@@ -50,23 +50,23 @@ void Graph::check() {
         std::cout<< "Graph is not dicotyledonous";
 }
 
-void Graph::show() {
+void Graph::show(sf::RenderWindow* window) {
 
-    sf::RenderWindow window(sf::VideoMode(800, 800), "Graph");
 
-    while (window.isOpen()) {
+
+    while (window->isOpen()) {
         sf::Event event{};
-        while (window.pollEvent(event)) {
+        while (window->pollEvent(event)) {
             if (event.type == sf::Event::Closed)
-                window.close();
+                window->close();
         }
 
-        window.clear();
+        window->clear();
         if (isDicotyledonous)
-            showDicotyledonous(&window);
+            showDicotyledonous(window);
         else
-            showNotDicotyledonous(&window);
-        window.display();
+            showNotDicotyledonous(window);
+        window->display();
     }
 
 }

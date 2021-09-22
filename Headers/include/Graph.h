@@ -6,12 +6,12 @@
 
 
 
-class Graph {
+class Graph: public ClDraw{
 public:
     Graph(int **g, int n);
     virtual ~Graph();
     void check();
-    void show();
+    void show(sf::RenderWindow* window) override;
     void showDicotyledonous(sf::RenderWindow* window);
     void showNotDicotyledonous(sf::RenderWindow* window);
 private:

@@ -28,7 +28,7 @@
 //0 0 0 1
 //1 1 1 0
 
-//
+
 //4
 //0 1 0 0
 //1 0 1 0
@@ -45,10 +45,10 @@ int main() {
         for (int j = 0; j < n; ++j)
             std::cin>>g[i][j];
     }
-
+    sf::RenderWindow window(sf::VideoMode(800, 800), "Graph");
     auto graph = new Graph(g, n);
     graph->check();
-    graph->show();
+    graph->show(&window);
 
     return 0;
 }
